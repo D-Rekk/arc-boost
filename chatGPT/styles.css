@@ -1,0 +1,123 @@
+/* 
+  a ChatGPT Arc Boost by D-Rek (https://github.com/D-Rekk)
+  inspired from @xilantra boost (https://github.com/Xilantra/enhanced-chatgpt)
+
+  Feel free to make any changes  
+*/
+
+/* hide scrollbars */
+::-webkit-scrollbar {
+  display: none; /* Safari */
+}
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* hide "Upgrade to Plus" button */
+nav> div.border-t.border-white\/20.pt-2> a {
+  display: none !important;
+}
+
+/* sidebar */
+div.dark.hidden.bg-gray-900.md\:flex.md\:w-\[260px\].md\:flex-col {
+  width: 48px;
+  overflow: hidden;
+  opacity: 0.2;
+  box-shadow: inset -8px 0 8px 2px rgba(0, 0, 0, 0.8);
+  transition: all 0.16s ease-in-out;
+}
+
+/* hover sidebar */
+div.dark.hidden.bg-gray-900.md\:flex.md\:w-\[260px\].md\:flex-col:hover {
+  width: 260px;
+  opacity: 1;
+  box-shadow: 8px 0 8px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* hide border from the "new chat" button */
+div.dark.hidden.bg-gray-900.md\:flex.md\:w-\[260px\].md\:flex-col:not(:hover)
+a.flex.py-3.px-3.items-center {
+  border-color: transparent;
+}
+
+/* show "new chat" button border when sidebar:hover */
+div.dark.hidden.bg-gray-900.md\:flex.md\:w-\[260px\].md\:flex-col:hover
+  a.flex.py-3.px-3.items-center {
+  border-color: hsla(0, 0%, 100%, 0.2);
+}
+
+/* chat perfectly aligned to center */
+main > div.flex-1.overflow-hidden > div > div > div > div > div {
+  justify-content: center;
+}
+
+/* align icons to top of text chat and adjust margin */
+div.w-\[30px\].flex.flex-col.relative.items-end { 
+  margin-left: -30px;
+  margin-top: 7px;
+}
+
+/* adjusted user icon size */
+nav > div.border-t.border-white\/20.pt-2 > div > button > div.-ml-0\.5 > div {
+  width: 150%;
+}
+
+/* left padding for the sidebar */
+@media (min-width: 768px) {
+  .md\:pl-\[260px\] {
+    padding-left: 48px !important;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .md\:pl-\[260px\] {
+    padding-left: 0;
+  }
+  /* hide "Upgrade to Plus" button */
+  nav > div.border-t.border-white\/20.pt-2 > a {
+    display: none !important;
+  }
+  /* center username */
+  nav > div > div > button > div.grow.text-left.text-white {
+    text-align: center;
+  }
+  /* restore icon margin to prevent weird UI */
+  .w-\[30px\].flex.flex-col.relative.items-end {
+    margin-left: 0px !important;
+  }
+  /* hide "X" button when opening chats */
+  button.ml-1.flex.h-10.w-10.items-center {
+    display: none;
+    pointer-events: none;
+  }
+}
+
+
+/* UNCOMMENT FOR RIGHT SIDEBAR LAYOUT
+
+div.overflow-hidden.w-full.h-full.relative.flex{
+    flex-direction: row-reverse;
+}
+
+nav.flex.h-full.flex-1.flex-col.p-2{
+  position: relative; 
+}
+nav.flex.h-full.flex-1.flex-col.p-2 > div:first-of-type{
+  width: 100%;
+}
+
+@media(max-width : 768px){
+  #__next > div.overflow-hidden.w-full.h-full.relative.flex > div > div {
+    flex-direction: row-reverse;
+  }
+
+  div > div.fixed.inset-0.z-40.flex {
+    flex-direction: row-reverse;
+  }
+  .-translate-x-full {
+    --tw-translate-x: 100% !important
+  }
+}
+*/
