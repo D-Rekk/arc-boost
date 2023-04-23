@@ -19,11 +19,11 @@ If you like it, leave a ⭐ on the repo and/or follow me. I would really appreac
 
 
 
-1. Remove the default comments. Hit <b>`+`</b> on topbar and add Content Script.</br>
+3. Remove the default comments. Hit <b>`+`</b> on topbar and add Content Script.</br>
 Select a folder from the repo then copy both <b>styles.css</b> and <b>content.js</b> files.<br>
 <img width="300" style="max-width: 300px" alt="3rd Step" src="https://user-images.githubusercontent.com/46907875/233793073-0d9bcfcf-2430-4ed5-87a4-807a177d46ce.png">
 
-1. Close the boost tab
+4. Close the boost tab
 ---
 ## Don't have Arc Yet?
 ### If you don't have Arc yet, well... you're lucky!
