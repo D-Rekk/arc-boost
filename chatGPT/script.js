@@ -1,4 +1,3 @@
-/* This runs after the page loads */
 function applyStyles() {
   let userName = document.querySelector("nav > div.border-t.border-white\\/20.pt-2 > div > button > div:nth-child(2)");
   if (userName !== null){
@@ -34,6 +33,10 @@ function applyStyles() {
   const labels = document.querySelectorAll("nav > div.flex-col.flex-1.transition-opacity.duration-500.overflow-y-auto > div > div > span > div > ol > li > a")
   if (labels){
     [...labels].forEach((label) => label.classList.remove("pr-14"))
+  }
+  const labelsHover = document.querySelectorAll("nav > div.flex-col.flex-1.transition-opacity.duration-500.overflow-y-auto > div > div > span > div > ol > li > div")
+  if (labelsHover){
+    [...labelsHover].forEach((label) => label.classList.remove("pr-14", "hover:pr-14"))
   }
   const icons = document.querySelectorAll("svg.h-4.w-4")
   if (icons){

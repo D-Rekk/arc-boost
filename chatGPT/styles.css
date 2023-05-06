@@ -20,33 +20,33 @@ nav> div.border-t.border-white\/20.pt-2> a {
 }
 
 /* sidebar */
-div.dark.hidden.bg-gray-900.md\:flex.md\:w-\[260px\].md\:flex-col {
-  width: 48px;
+div.dark.hidden.bg-gray-900.md\:flex.w-\[260px\].flex-col {
+  width: 48px !important;
   overflow: hidden;
   opacity: 0.2;
   transition: all 0.16s ease-in-out;
 }
 
 /* hover sidebar */
-div.dark.hidden.bg-gray-900.md\:flex.md\:w-\[260px\].md\:flex-col:hover {
-  width: 260px;
+div.dark.hidden.bg-gray-900.md\:flex.w-\[260px\].flex-col:hover {
+  width: 260px !important;
   opacity: 1;
   box-shadow: 8px 0 8px 2px rgba(0, 0, 0, 0.24);
 }
 
-div.dark.hidden.bg-gray-900.md\:flex.md\:w-\[260px\].md\:flex-col:not(:hover)
+div.dark.hidden.bg-gray-900.md\:flex.w-\[260px\].flex-col:not(:hover)
 nav{
   padding-right: 0;
 }
 
 /* hide border from the "new chat" button */
-div.dark.hidden.bg-gray-900.md\:flex.md\:w-\[260px\].md\:flex-col:not(:hover)
+div.dark.hidden.bg-gray-900.md\:flex.w-\[260px\].flex-col:not(:hover)
 a.flex.py-3.px-3.items-center {
   border-color: transparent;
 }
 
 /* show "new chat" button border when sidebar:hover */
-div.dark.hidden.bg-gray-900.md\:flex.md\:w-\[260px\].md\:flex-col:hover
+div.dark.hidden.bg-gray-900.md\:flex.w-\[260px\].flex-col:hover
   a.flex.py-3.px-3.items-center {
   border-color: hsla(0, 0%, 100%, 0.2);
 }
@@ -57,7 +57,7 @@ main > div.flex-1.overflow-hidden > div > div > div > div > div {
 }
 
 /* align icons to top of text chat and adjust margin */
-div.w-\[30px\].flex.flex-col.relative.items-end { 
+div.flex.flex-col.relative.items-end > div.w-\[30px\]{ 
   margin-left: -30px;
   margin-top: 7px;
 }
@@ -96,9 +96,8 @@ nav > div.border-t.border-white\/20.pt-2 > div > button > div.-ml-0\.5 > div {
     display: none;
     pointer-events: none;
   }
+  
 }
-
-
 /* Adding border to chatbar*/
 main > div.absolute.bottom-0.left-0.w-full.border-t> form {
   padding-bottom: 10px;
@@ -107,6 +106,8 @@ main > div.absolute.bottom-0.left-0.w-full.border-t> form {
 main > div.absolute.bottom-0.left-0.w-full.border-t > div {
   display: none;
 }
+
+
 /* UNCOMMENT FOR RIGHT SIDEBAR LAYOUT
 
 div.overflow-hidden.w-full.h-full.relative.flex{
